@@ -1,0 +1,32 @@
+
+  <h1>Heroes <small>de Marvel y DC</small></h1>
+  <hr />
+  <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let h of heroes">
+            <div  class="card h-100">
+                <img [src]="h.img" class="card-img-top" [alt]="h.nombre">
+                <div class="card-body">
+                    <h5 class="card-title">{{h.nombre}}</h5>
+                    <p class="card-text">{{h.bio}}</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">{{h.aparicion}}</small>
+                </div>
+                
+
+                    <button type="button" class="btn btn-primary btn-lg ">Ver mas ...</button>
+              
+
+            </div>
+        </div>
+    </div>
+  *ngFor="let h of heroes; let i = index" -->
+
+    <div class="card-columns">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+      
+      <app-heroe-tarjeta (heroeSelect)="GetHeroe( $event)" [h]="h" [index]="i" *ngFor="let h of heroes; let i = index"></app-heroe-tarjeta>
+      </div>
+    </div>
+  
+  

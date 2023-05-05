@@ -1,0 +1,22 @@
+<div  class="">
+    <div class="col" >
+      <div class="card" style="padding: 5px;">
+        <img [src]="h.img" class="card-img-top" [alt]="h.nombre" />
+        <div class="card-body">
+          <h5 class="card-title">{{ h.nombre }}</h5>
+          <p class="card-text">{{ h.bio }}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">{{ h.aparicion }}</small>
+        </div>
+        <button
+          (click)="GetHeroe()"
+          type="button"
+          class="btn btn-primary btn-lg"
+        >
+          Ver mas ...
+        </button>
+        <!-- <button [routerLink]="['/heroe',i]" type="button" class="btn btn-primary btn-lg ">Ver mas ...</button> -->
+      </div>
+    </div>
+  </div>    
